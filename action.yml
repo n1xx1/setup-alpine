@@ -1,4 +1,4 @@
-name: Setup Alpine Linux environment
+name: Setup Alpine Linux environment fork
 description: >
   Set up a chroot-based Alpine Linux environment and optionally QEMU user emulator for non-x86 architectures.
 author: Jakub Jirutka
