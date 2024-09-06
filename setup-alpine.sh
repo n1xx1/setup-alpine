@@ -265,7 +265,7 @@ mkdir -p proc
 mount -v -t proc none proc
 mount_bind /dev dev
 mount_bind /sys sys
-mount_bind "$RUNNER_HOME/work" "${RUNNER_HOME#/}/work"
+mount_bind "$RUNNER_HOME/$INPUT_WORKSPACE_MOUNT" "${RUNNER_HOME#/}/${INPUT_WORKSPACE_MOUNT#/}"
 
 # Some systems (Ubuntu?) symlinks /dev/shm to /run/shm.
 if [ -L /dev/shm ] && [ -d /run/shm ]; then

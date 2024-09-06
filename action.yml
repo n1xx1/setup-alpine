@@ -63,6 +63,12 @@ inputs:
       don't specify it here.
     required: false
     default: ''
+  workspace-mount:
+    description: >
+      If you are running with a runner that isn't using /home/runner/work for the workspace location,
+      you can change it here. This will always be relative to /home/runner.
+    required: false
+    default: 'work'
 outputs:
   root-path:
     description: >
