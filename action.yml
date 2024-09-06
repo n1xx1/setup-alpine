@@ -90,6 +90,7 @@ runs:
         INPUT_PACKAGES: ${{ inputs.packages }}
         INPUT_SHELL_NAME: ${{ inputs.shell-name }}
         INPUT_VOLUMES: ${{ inputs.volumes }}
+        INPUT_WORKSPACE_MOUNT: ${{ inputs.workspace-mount }}
       run: sudo -E ./setup-alpine.sh
       working-directory: ${{ github.action_path }}
       shell: bash
